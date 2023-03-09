@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assets/tile1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/tile1.png" type="Texture2D" id=1]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -14,7 +14,7 @@ animations = [ {
 
 [node name="Entity" type="Area2D"]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 frames = SubResource( 1 )
 animation = "tile"
 

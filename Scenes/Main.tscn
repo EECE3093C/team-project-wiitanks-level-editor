@@ -1,17 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://citpegvpk5wof"]
 
-[ext_resource path="res://Scripts/Editor_Objects.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Objects_Select.tscn" type="PackedScene" id=2]
+[ext_resource type="Script" path="res://Scripts/Editor_Objects.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://qg4leg177qun" path="res://Scenes/Objects_Select.tscn" id="2"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Level" type="Node2D" parent="."]
 
 [node name="Editor_Objects" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource("1")
 
-[node name="Sprite" type="Sprite" parent="Editor_Objects"]
+[node name="Sprite2D" type="Sprite2D" parent="Editor_Objects"]
 
-[node name="Objects_Select" parent="." instance=ExtResource( 2 )]
-margin_left = 365.0
-margin_right = 405.0
+[node name="Objects_Select" parent="." instance=ExtResource("2")]
+offset_left = 883.0
+offset_top = 12.0
+offset_right = 1272.0
+offset_bottom = 281.0

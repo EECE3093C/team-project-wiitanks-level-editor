@@ -1,0 +1,17 @@
+2a60927148abd1d33b818b535e306557
+::res://::1678337664
+default_env.tres::Environment::-1::1678337656::0::1::::<><>::
+README.md::TextFile::-1::1678337503::0::1::::<><>::
+::res://Assets/::1677257822
+icon.png::CompressedTexture2D::4458400448778863315::1676958611::1678337664::1::::<><>::
+tile1.png::CompressedTexture2D::7833326759820598204::1676959517::1678337664::1::::<><>::
+::res://Scenes/::1677257822
+Entity.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Assets/tile1.png
+Main.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Scripts/Editor_Objects.gd<>res://Scenes/Objects_Select.tscn
+Objects_Select.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Scenes/Object_Tile.tscn
+Object_Texture.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Scripts/Object_Texture.gd
+Object_Tile.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Assets/tile1.png<>res://Scenes/Tile.tscn<>res://Scenes/Object_Texture.tscn
+Tile.tscn::PackedScene::-1::1678337656::0::1::::<><>::res://Scenes/Entity.tscn
+::res://Scripts/::1677257822
+Editor_Objects.gd::GDScript::-1::1678337656::0::1::::<>Node2D<>::
+Object_Texture.gd::GDScript::-1::1678337656::0::1::::<>TextureRect<>::

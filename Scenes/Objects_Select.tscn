@@ -1,54 +1,51 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://qg4leg177qun"]
 
-[ext_resource path="res://Scenes/Object_Tile.tscn" type="PackedScene" id=1]
+[ext_resource type="PackedScene" path="res://Scenes/Object_Tile.tscn" id="1"]
 
 [node name="Objects_Select" type="Control"]
-margin_right = 40.0
-margin_bottom = 40.0
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="TabContainer" type="TabContainer" parent="."]
-margin_left = 14.0
-margin_top = 5.0
-margin_right = 268.0
-margin_bottom = 177.0
+layout_mode = 0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = 369.0
+offset_bottom = 261.0
 
-[node name="Tiles" type="Tabs" parent="TabContainer"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 32.0
-margin_right = -4.0
-margin_bottom = -4.0
+[node name="Tiles" type="TabBar" parent="TabContainer"]
+layout_mode = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Tiles"]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Tiles/ScrollContainer"]
-margin_right = 16.0
-margin_bottom = 16.0
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Tiles/ScrollContainer/VBoxContainer"]
-margin_right = 16.0
-margin_bottom = 16.0
+layout_mode = 2
 
-[node name="Object_Tile" parent="TabContainer/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_right = 16.0
-margin_bottom = 16.0
+[node name="Object_Tile" parent="TabContainer/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1")]
+layout_mode = 2
 
-[node name="Obstacles" type="Tabs" parent="TabContainer"]
+[node name="Obstacles" type="TabBar" parent="TabContainer"]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 32.0
-margin_right = -4.0
-margin_bottom = -4.0
+layout_mode = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Obstacles"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Obstacles/ScrollContainer"]
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Obstacles/ScrollContainer/VBoxContainer"]
+layout_mode = 2

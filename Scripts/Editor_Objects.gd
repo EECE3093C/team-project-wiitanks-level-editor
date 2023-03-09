@@ -2,7 +2,7 @@ extends Node2D
 
 var can_place = true
 
-onready var level = get_node("/root/Main/Level")
+@onready var level = get_node("/root/Main/Level")
 
 var current_object
 # Called when the node enters the scene tree for the first time.
@@ -15,7 +15,7 @@ func _process(_delta):
 	global_position = get_global_mouse_position()
 	
 	if (current_object != null and can_place and Input.is_action_just_pressed("mb_left")):
-		var new_object = current_object.instance()
+		var new_object = current_object.instantiate()
 		level.add_child(new_object)
 		new_object.global_position = get_global_mouse_position()
 	
